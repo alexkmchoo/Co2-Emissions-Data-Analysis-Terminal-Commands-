@@ -84,6 +84,7 @@ head -n 1 co2_emissions_2022.csv
 ```
 
 **Output:**
+
 country,iso_code,year,population,gdp,co2
 
 ## 3. Column-by-column data type table
@@ -107,6 +108,7 @@ Fill in the table from what you actually saw — not a guess from the column
 name alone:
 
 | Column | Inferred type | How I can tell |
+| ------ | -------- | --------- |
 | country | string | Pure text. Text labeling the country |
 | iso_code | string | Pure text. Its a text based label |
 | year | string | Even though this are numbers, no arthmetic will be done on it. It is used as a label. Number based label |

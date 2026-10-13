@@ -8,3 +8,5 @@
 # but you will in later modules, so ignore them from day one
 __pycache__/
 .ipynb_checkpoints/
+
+# TODO: the commands you actually ran to set up this repo
