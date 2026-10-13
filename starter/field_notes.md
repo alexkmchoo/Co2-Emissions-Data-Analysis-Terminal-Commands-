@@ -96,12 +96,12 @@ row. Column numbers for reference: `country`=1, `iso_code`=2, `year`=3,
 
 ```bash
 cd data/
-cut -d, -f1 co2_emissions_2022.csv | head -n 6
-cut -d, -f2 co2_emissions_2022.csv | head -n 6
-cut -d, -f3 co2_emissions_2022.csv | head -n 6
-cut -d, -f4 co2_emissions_2022.csv | head -n 6
-cut -d, -f5 co2_emissions_2022.csv | head -n 6
-cut -d, -f6 co2_emissions_2022.csv | head -n 6
+cut -d',' -f1 co2_emissions_2022.csv | head -n 6
+cut -d',' -f2 co2_emissions_2022.csv | head -n 6
+cut -d',' -f3 co2_emissions_2022.csv | head -n 6
+cut -d',' -f4 co2_emissions_2022.csv | head -n 6
+cut -d',' -f5 co2_emissions_2022.csv | head -n 6
+cut -d',' -f6 co2_emissions_2022.csv | head -n 6
 ```
 
 Fill in the table from what you actually saw — not a guess from the column
@@ -139,27 +139,28 @@ You may need more than one command for this — piping (`|`) feeds one
 command's output into the next as input.
 
 ```bash
-# TODO: a command (or combination) that counts how many rows have a
-# BLANK iso_code
+cut -d',' -f2 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
 ```
 
 **Output:**
-_TODO_
+
+36
 
 ```bash
-# TODO: the same idea, but for the gdp column
+cut -d',' -f5 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
 ```
 
 **Output:**
-_TODO_
+
+89
 
 List **at least 2** specific things you'd want to know about how this
 dataset was collected, before trusting any conclusion drawn from it — ground
 at least one in the counts you just found.
 
 **My 2 concerns:**
-1. _TODO_
-2. _TODO_
+1. Why were some countries seperated from their continent? Asia has a value but so does Malaysia and Japan
+2. How were the missing data values handeled? like the 89 missing values from the gdp column
 
 ## 6. Data-quality question for the source
 
