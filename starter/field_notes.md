@@ -121,13 +121,13 @@ and a table? (Not a definition you looked up — explain it the way you'd
 explain it to a friend who's never coded. No command needed for this one,
 just think about the table you just filled in above.)
 
-_TODO_
+A table consists of rows and columns with data inside whereas a list/array contains data seperated by just commas.
 
 ## 4. Structured or unstructured?
 
 State whether this dataset is structured or unstructured, and why.
 
-_TODO_
+This dataset is structured because not only does it has rows and columns, the same data type is in each column. 
 
 ## 5. Before you trust this data
 
