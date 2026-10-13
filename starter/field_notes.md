@@ -107,12 +107,12 @@ Fill in the table from what you actually saw — not a guess from the column
 name alone:
 
 | Column | Inferred type | How I can tell |
-| country | string | it is pure text |
-| iso_code | string | _TODO_ |
-| year | string | even though this is numbers, no arthmetic will be done on it. It is used as a label |
-| population | integer | _TODO_ |
-| gdp | integer | _TODO_ |
-| co2 | float | _TODO_ |
+| country | string | Pure text. Text labeling the country |
+| iso_code | string | Pure text. Its a text based label |
+| year | string | Even though this are numbers, no arthmetic will be done on it. It is used as a label. Number based label |
+| population | integer | Population represents a quantity. Arthmetic can be performed here|
+| gdp | integer | gdp also represents a quantity. Arthmetic can also be performed here |
+| co2 | float | contains decimal points in the numbers |
 
 **In your own words:** what's the actual difference between a list/array
 and a table? (Not a definition you looked up — explain it the way you'd
