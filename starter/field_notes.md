@@ -169,7 +169,7 @@ phrase it as a real question you'd send to the data's source/maintainer. A
 good test: could they actually answer it with a concrete yes/no or fact —
 not "is this data good?"
 
-_TODO_
+In the dataset, there are 89 entries in the gdp column where it was left blank. Were these missing values intentionally omitted or just unavaiable?
 
 ## 7. Something you're actually curious about
 
@@ -179,14 +179,18 @@ curious to explore using this data? Pick two specific countries you're
 curious to compare, and look up their full rows.
 
 ```bash
-# TODO: a command that finds a specific country's row by name (repeat for
-# a second country of your choice)
+head -n 1 co2_emissions_2022.csv && grep -E "Ukraine|Russia" co2_emissions_2022.csv
 ```
 
 **Output:**
-_TODO_
 
-**My question:** _TODO_
+country,iso_code,year,population,gdp,co2
+Russia,RUS,2022,145579889,3731440829579,1675.461
+Ukraine,UKR,2022,41048768,309166674673,143.040
+
+**My question:** 
+
+How does the population, gdp, and co2 compare across Russia and Ukraine since they've been at war the year the data was collected.
 
 ## 8. AI-literacy reflection
 
@@ -197,10 +201,14 @@ fact before relying on it professionally — specific enough that you could
 actually follow it, not "I'll be careful."
 
 **Risks:**
-1. _TODO_
-2. _TODO_
+1. It could give you the wrong information.
+2. It could give you made up data.
 
-**My rule:** _TODO_
+**My rule:** 
+
+Rather than uploading your dataset to AI and it to give you the answer, ask AI like a tutor to teach you how to do it
+Example : We learned grep, &&, and | in class already. You could ask AI 
+"I know head -n1 will pull the first row of data on the output, and grep -E will search for a specific value, how could I combine these to specifically look at two different rows only in my dataset".
 
 ## 9. Something that went wrong (and how you figured it out)
 
