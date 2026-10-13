@@ -60,13 +60,18 @@ safe peek at it — not the whole 254-row file, just the **first 5 lines**,
 enough to see the shape of it without scrolling past everything.
 
 ```bash
+cd data/
 head -n 5 co2_emissions_2022.csv
 ```
 
 **Output:**
-_TODO: paste what you actually got_
+country,iso_code,year,population,gdp,co2
+Afghanistan,AFG,2022,40578847,53303471617,10.170
+Africa,,2022,1445862695,,1459.114
+Africa (GCP),,2022,,,1459.103
 
-**What I notice:** _TODO — your raw observations, in your own words_
+**What I notice:** 
+Africa and Africa(GCP) has missing values in the iso_code column and the gdp column. Africa (GCP) also has missing values in the gdp column
 
 ## 2. Column names
 
@@ -74,12 +79,12 @@ Next you want to see just the column names by themselves — one per line is
 a lot easier to scan than one long comma-separated row.
 
 ```bash
-# TODO: a command (or combination of commands) that prints just the header
-# row, one column name per line
+cd data/
+head -n 1 co2_emissions_2022.csv
 ```
 
 **Output:**
-_TODO_
+country,iso_code,year,population,gdp,co2
 
 ## 3. Column-by-column data type table
 
@@ -89,20 +94,25 @@ row. Column numbers for reference: `country`=1, `iso_code`=2, `year`=3,
 `population`=4, `gdp`=5, `co2`=6.
 
 ```bash
-# TODO: a command that prints the first 6 values from a single column
-# (repeat this for at least 5 of the 6 columns, swapping in each column's number)
+cd data/
+cut -d, -f1 co2_emissions_2022.csv | head -n 6
+cut -d, -f2 co2_emissions_2022.csv | head -n 6
+cut -d, -f3 co2_emissions_2022.csv | head -n 6
+cut -d, -f4 co2_emissions_2022.csv | head -n 6
+cut -d, -f5 co2_emissions_2022.csv | head -n 6
+cut -d, -f6 co2_emissions_2022.csv | head -n 6
 ```
 
 Fill in the table from what you actually saw — not a guess from the column
 name alone:
 
 | Column | Inferred type | How I can tell |
-|---|---|---|
-| _TODO_ | _TODO_ | _TODO_ |
-| _TODO_ | _TODO_ | _TODO_ |
-| _TODO_ | _TODO_ | _TODO_ |
-| _TODO_ | _TODO_ | _TODO_ |
-| _TODO_ | _TODO_ | _TODO_ |
+| country | string | it is pure text |
+| iso_code | string | _TODO_ |
+| year | string | even though this is numbers, no arthmetic will be done on it. It is used as a label |
+| population | integer | _TODO_ |
+| gdp | integer | _TODO_ |
+| co2 | float | _TODO_ |
 
 **In your own words:** what's the actual difference between a list/array
 and a table? (Not a definition you looked up — explain it the way you'd
