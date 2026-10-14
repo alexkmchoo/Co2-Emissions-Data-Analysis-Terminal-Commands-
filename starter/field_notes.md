@@ -243,3 +243,21 @@ cut -d',' -f2 co2_emissions_2022.csv | grep -E '^ *$' | wc -l && cut -d',' -f5 c
 ```
 
 Although I did not include this command in question 5 because it was asking for two seperate commands to find out the blanks, just thought this was cool and experimenting what we learned in class actually worked. Shoutout Tina for always telling us to try it!
+
+
+## Above and Beyond
+**Chain Terminal Commands:**
+```bash
+cut -d',' -f2 co2_emissions_2022.csv | grep -E '^ *$' | wc -l && cut -d',' -f5 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
+```
+
+Same command as question 9. What it does is combines the intial cut -d command, which filters it to column 2, grep -E, which finds a specific value for me, and wc -l which counts the rows. This was used with a "&&" function which can combine two commands, which I found the blanks for columns 2 (iso_code) and 4 (gdp) together.
+let's say I also want to find the blanks in population as well. I would just add this to the command:
+```bash
+cut -d',' -f2 co2_emissions_2022.csv | grep -E '^ *$' | wc -l && cut -d',' -f4 co2_emissions_2022.csv | grep -E '^ *$' | wc -l && cut -d',' -f5 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
+```
+The output gives me :
+36 
+25
+89
+
