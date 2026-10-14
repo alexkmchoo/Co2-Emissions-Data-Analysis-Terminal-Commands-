@@ -201,8 +201,8 @@ fact before relying on it professionally — specific enough that you could
 actually follow it, not "I'll be careful."
 
 **Risks:**
-1. It could give you the wrong information.
-2. It could give you made up data.
+1. It could give you the wrong information like there are 900 blanks in this row. This is also known as a hallucination
+2. It could read the data question wrong, thus even if the answer seems right, its completely off topic
 
 **My rule:** 
 
