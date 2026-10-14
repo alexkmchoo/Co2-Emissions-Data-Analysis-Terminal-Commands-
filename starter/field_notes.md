@@ -219,10 +219,27 @@ this at least once. Paste the actual command and what actually happened
 fix — not "I googled it and it worked."
 
 ```bash
-# TODO: a command that errored, or gave you unexpected results
+cut -d',' -f2,4,5 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
 ```
 
 **What happened:**
-_TODO: the actual error message, or the unexpected output you got_
+It returned "0", which I know is false because from looking at the data, it was right
 
 **What it told me and how I fixed it:** _TODO_
+
+This was my original code 
+```bash
+ut -d',' -f2 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
+```
+I decided to combine this because we learned in class this command works :
+```bash
+cut -d’,’ -f1,3,5 <file.name>
+```
+So I thought, why not do the same but use grep -E to look for blanks across rows 2,4, and 5.
+
+How I fixed it was actually playing around with it and copy and pasting the same code again, just with a different f number value
+```bash
+cut -d',' -f2 co2_emissions_2022.csv | grep -E '^ *$' | wc -l && cut -d',' -f5 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
+```
+
+Although I did not include this command in question 5 because it was asking for two seperate commands to find out the blanks, just thought this was cool and experimenting what we learned in class actually worked. Shoutout Tina for always telling us to try it!
