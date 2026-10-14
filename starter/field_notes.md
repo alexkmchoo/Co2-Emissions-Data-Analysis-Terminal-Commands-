@@ -261,5 +261,6 @@ The output gives me :
 25
 89
 
-**Preview of Module 1**
+**Preview of Module 1:**
+
 guess_type() does agree with my own column-type table from section 3 because it states the same data type as I did because you can see that if value is int(value) then it will return a "whole number", if it is a float(value) then it will return a "decimal number" and Afghanistan returned "text" which is a string. The only thing that wasn't mentioned was the missing value column in my section 3.
