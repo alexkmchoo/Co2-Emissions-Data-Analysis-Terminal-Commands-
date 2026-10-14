@@ -71,7 +71,7 @@ Africa,,2022,1445862695,,1459.114
 Africa (GCP),,2022,,,1459.103
 
 **What I notice:** 
-Africa and Africa(GCP) has missing values in the iso_code column and the gdp column. Africa (GCP) also has missing values in the gdp column
+Africa has missing values in the iso_code column and the gdp column. Africa (GCP) also has missing values in the iso_code, population, and gdp column columns.
 
 ## 2. Column names
 
