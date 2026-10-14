@@ -231,7 +231,7 @@ It returned "0", which I know is false because from looking at the data, it was 
 
 This was my original code 
 ```bash
-ut -d',' -f2 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
+cut -d',' -f2 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
 ```
 I decided to combine this because we learned in class this command works :
 ```bash
