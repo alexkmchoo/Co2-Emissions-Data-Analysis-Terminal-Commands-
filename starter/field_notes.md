@@ -218,14 +218,16 @@ this at least once. Paste the actual command and what actually happened
 (not a paraphrase), then explain what that told you and how it led to the
 fix — not "I googled it and it worked."
 
+**NUMBER ONE**
 ```bash
 cut -d',' -f2,4,5 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
 ```
 
 **What happened:**
+
 It returned "0", which I know is false because from looking at the data, it was right
 
-**What it told me and how I fixed it:** _TODO_
+**What it told me and how I fixed it:** 
 
 This was my original code 
 ```bash
@@ -242,8 +244,36 @@ How I fixed it was actually playing around with it and copy and pasting the same
 cut -d',' -f2 co2_emissions_2022.csv | grep -E '^ *$' | wc -l && cut -d',' -f5 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
 ```
 
-Although I did not include this command in question 5 because it was asking for two seperate commands to find out the blanks, just thought this was cool and experimenting what we learned in class actually worked. Shoutout Tina for always telling us to try it!
+Although I did not include this command in question 5 (since q5 was asking for two seperate commands), this shows a single command to find the rows of blanks across columns 2 and 5.
+ 
+**NUMBER TWO**
+```bash
+grep "Russia" co2_emissions_2022.csv && grep "Ukraine" co2_emissions_2022.csv
+```
+**What happened**
 
+It returned cmdanddquote>. I tried to play around with it, replacing "&&" with "|" , which gave me pipe dquote>.
+
+**What it told me and how I fixed it:** 
+
+It told me that my commands were wrong. We learned in class that | means or and && means and. I used claude to tell me what went wrong. I put "How can I combine these two into one single line. Here is what I have so far <command>, I also tried <command2 with |>. It told me what I needed to do and I was actually on the right track.
+
+So I fixed it by inserting -E in front of grep and closing the quotation with | between the two strings I wanted to look up.
+
+Revised Code:
+```bash
+grep -E "Ukraine|Russia" co2_emissions_2022.csv
+```
+This yielded an output of Russia and Ukranie's information
+
+But I wasn't finished, I also wanted to include the header, which describes what I am looking at. Again we learned in class that && combines commands so,I added && head n -1 <file.name> to the end, but realized I needed to add it to the front.
+
+Final code: 
+```bash
+head -n 1 co2_emissions_2022.csv && grep -E "Ukraine|Russia" co2_emissions_2022.csv
+```
+
+ I just thought this was cool and experimenting what we learned in class actually worked. Shoutout Tina for always telling us to try it!
 
 ## Above and Beyond
 **Chain Terminal Commands:**
