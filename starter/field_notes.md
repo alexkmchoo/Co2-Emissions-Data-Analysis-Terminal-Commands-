@@ -65,12 +65,14 @@ head -n 5 co2_emissions_2022.csv
 ```
 
 **Output:**
+
 country,iso_code,year,population,gdp,co2
 Afghanistan,AFG,2022,40578847,53303471617,10.170
 Africa,,2022,1445862695,,1459.114
 Africa (GCP),,2022,,,1459.103
 
 **What I notice:** 
+
 Africa has missing values in the iso_code column and the gdp column. Africa (GCP) also has missing values in the iso_code, population, and gdp column columns.
 
 ## 2. Column names
