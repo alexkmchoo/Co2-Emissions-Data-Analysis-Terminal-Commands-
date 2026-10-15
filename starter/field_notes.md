@@ -163,7 +163,7 @@ There are 89 blanks or missing data in the gdp column
 cut -d',' -f4 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
 ```
 
-**Output**
+**Output:**
 
 25
 There are 25 blanks or missing data in the population column
