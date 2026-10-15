@@ -146,7 +146,8 @@ cut -d',' -f2 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
 
 **Output:**
 
-36
+36  
+There are 36 blanks or missing data in the iso_code column
 
 ```bash
 cut -d',' -f5 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
@@ -154,7 +155,18 @@ cut -d',' -f5 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
 
 **Output:**
 
-89
+89 
+There are 89 blanks or missing data in the gdp column
+
+**Additional !** 
+```bash
+cut -d',' -f4 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
+```
+
+**Output**
+
+25
+There are 25 blanks or missing data in the population column
 
 List **at least 2** specific things you'd want to know about how this
 dataset was collected, before trusting any conclusion drawn from it — ground
