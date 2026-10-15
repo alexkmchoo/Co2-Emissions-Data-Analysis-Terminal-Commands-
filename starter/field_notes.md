@@ -204,7 +204,8 @@ Ukraine,UKR,2022,41048768,309166674673,143.040
 
 **My question:** 
 
-How does the population, gdp, and co2 compare across Russia and Ukraine since they've been at war the year the data was collected.
+I wanted to look at gdp values and co2 values across these two countries because they've been at war since the year the data was collected.
+My question is How does the population, gdp, and co2 compare across Russia and Ukraine? Who has the higher values and what does that tell you about their standings.
 
 ## 8. AI-literacy reflection
 
