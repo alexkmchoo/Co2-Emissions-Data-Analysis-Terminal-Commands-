@@ -29,3 +29,21 @@ There are many missing rows of data, is this data just unavaiable or was it inte
 I want to see how population affects co2 levels and how gdp affects co2 levels. Does a higher population yield higher co2 levels? Does a richer country yeild higher co2 levels?
 
 I also want to compare energy and emissions across two opposing countries like Pakistan and India, Russia and Ukraine, China and Taiwan. Whether they are currently at war, had hostile relations in the past, or there is just rooted problems across the two countries.
+
+# Source and License
+
+**Source**
+
+Github repo  
+Rosado, P., et al. Data on CO2 and greenhouse gas emissions by Our World in Data. GitHub, 2026, https://github.com/owid/co2-data.
+
+Co2 Data   
+Hannah Ritchie, Pablo Rosado, and Max Roser (2023) - “CO₂ and Greenhouse Gas Emissions” Published online at OurWorldinData.org. Retrieved from: 'https://ourworldindata.org/co2-and-greenhouse-gas-emissions' [Online Resource]
+
+Population Data  
+Edouard Mathieu and Lucas Rodés-Guirao (2022) - “What are the sources for Our World in Data's population estimates?” Published online at OurWorldinData.org. Retrieved from: 'https://archive.ourworldindata.org/20260910-004756/population-sources.html' [Online Resource] (archived on September 10, 2026).
+
+
+**License**
+
+https://creativecommons.org/licenses/by/4.0/
