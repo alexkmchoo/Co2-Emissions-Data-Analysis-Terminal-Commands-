@@ -239,11 +239,11 @@ cut -d',' -f2,4,5 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
 
 **What happened:**
 
-It returned "0", which I know is false because from looking at the data, it was right
+It returned "0", which I know is false because from looking at the data, blanks definitely exist, so I know something went wrong in my command
 
 **What it told me and how I fixed it:** 
 
-This was my original code 
+This was my original command
 ```bash
 cut -d',' -f2 co2_emissions_2022.csv | grep -E '^ *$' | wc -l
 ```
@@ -251,7 +251,7 @@ I decided to combine this because we learned in class this command works :
 ```bash
 cut -d’,’ -f1,3,5 <file.name>
 ```
-So I thought, why not do the same but use grep -E to look for blanks across rows 2,4, and 5.
+So I thought, why not do the same but use grep -E to look for blanks across rows 2, 4, and 5.
 
 How I fixed it was actually playing around with it and copy and pasting the same code again, just with a different f number value
 ```bash
