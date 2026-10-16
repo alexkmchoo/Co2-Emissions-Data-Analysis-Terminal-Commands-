@@ -183,7 +183,7 @@ phrase it as a real question you'd send to the data's source/maintainer. A
 good test: could they actually answer it with a concrete yes/no or fact —
 not "is this data good?"
 
-In the dataset, there are 89 entries in the gdp column where it was left blank. Were these missing values intentionally omitted or just unavaiable?
+About 35% of the values are missing in the GDP column (89 missing entries out of 254) of this dataset, which could affect my analysis. Was this missing data intentionally omitted or was it just a collection error?
 
 ## 7. Something you're actually curious about
 
