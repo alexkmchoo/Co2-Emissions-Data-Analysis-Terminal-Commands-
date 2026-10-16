@@ -213,7 +213,7 @@ My question is How does the population, gdp, and co2 compare across Russia and U
 cut -d',' -f1,5,6 co2_emissions_2022.csv 
 ```
 
-**Output:**
+**Output:**  
 country,gdp,co2 
 Afghanistan,53303471617,10.170  
 Africa,,1459.114  
@@ -221,14 +221,14 @@ Africa (GCP),,1459.103
 Albania,36171005594,4.498 
 Algeria,595820067103,192.779  
 Andorra,,0.423  
-...
-Venezuela,149682062815,108.424
-Vietnam,833803909046,322.653
-Wallis and Futuna,,0.029
-World,130112562171125,37527.773
-Yemen,60852995288,10.404
-Zambia,68469600029,10.939
-Zimbabwe,25901585881,12.232
+...  
+Venezuela,149682062815,108.424  
+Vietnam,833803909046,322.653  
+Wallis and Futuna,,0.029  
+World,130112562171125,37527.773  
+Yemen,60852995288,10.404  
+Zambia,68469600029,10.939  
+Zimbabwe,25901585881,12.232  
 
 Now I didnt include the whole output and skipped a little because there are 254 lines
 
