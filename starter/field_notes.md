@@ -207,6 +207,36 @@ Ukraine,UKR,2022,41048768,309166674673,143.040
 I wanted to look at gdp values and co2 values across these two countries because they've been at war since the year the data was collected.
 My question is How does the population, gdp, and co2 compare across Russia and Ukraine? Who has the higher values and what does that tell you about their standings.
 
+**Another thing I wanted to check is:**
+
+```bash
+cut -d',' -f1,5,6 co2_emissions_2022.csv 
+```
+
+**Output:**
+country,gdp,co2 
+Afghanistan,53303471617,10.170  
+Africa,,1459.114  
+Africa (GCP),,1459.103  
+Albania,36171005594,4.498 
+Algeria,595820067103,192.779  
+Andorra,,0.423  
+...
+Venezuela,149682062815,108.424
+Vietnam,833803909046,322.653
+Wallis and Futuna,,0.029
+World,130112562171125,37527.773
+Yemen,60852995288,10.404
+Zambia,68469600029,10.939
+Zimbabwe,25901585881,12.232
+
+Now I didnt include the whole output and skipped a little because there are 254 lines
+
+**My question**
+
+The question I wanted to explore with this command is just to look at how the gdp column compares with the co2 emission levels. Do countries with higher gdp have higher co2 emissons? What is the correlation here, if any?
+
+
 ## 8. AI-literacy reflection
 
 Name **2 concrete risks** of trusting an AI assistant's output about this
