@@ -1,5 +1,9 @@
 # Overview
 
+**Stakeholder**
+
+It is a climate-and-energy nonprofit team that needs us, as data analysts, to decide where to decide where to send community-protection and climate-support efforts.
+
 **What does each column actually hold, and what data type is it?**
 
 Each column holds values pertaining to its name.
