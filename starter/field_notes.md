@@ -198,7 +198,7 @@ head -n 1 co2_emissions_2022.csv && grep -E "Ukraine|Russia" co2_emissions_2022.
 
 **Output:**
 
-country,iso_code,year,population,gdp,co2
+country,iso_code,year,population,gdp,co2  
 Russia,RUS,2022,145579889,3731440829579,1675.461
 Ukraine,UKR,2022,41048768,309166674673,143.040
 
