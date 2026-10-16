@@ -1,4 +1,10 @@
-# Overview
+# Overview of Co2 emissions across countries
+
+## Summary
+
+**Stakeholder**
+
+It is a climate-and-energy nonprofit team that needs us, as data analysts, to decide where to decide where to send community-protection and climate-support efforts.
 
 **What does each column actually hold, and what data type is it?**
 
@@ -30,7 +36,7 @@ I want to see how population affects co2 levels and how gdp affects co2 levels. 
 
 I also want to compare energy and emissions across two opposing countries like Pakistan and India, Russia and Ukraine, China and Taiwan. Whether they are currently at war, had hostile relations in the past, or there is just rooted problems across the two countries.
 
-# Source and License
+## Source and License
 
 **Source**
 
